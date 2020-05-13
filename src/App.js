@@ -5,7 +5,7 @@ import facebook from './assets/facebook.svg'
 import './App.css';
 
 const url = 'https://about.botor.no/'
-const text = 'A guide about the bot curious, by FOREIGN OBJECTS.';
+const text = 'A guide for the bot curious, by FOREIGN OBJECTS.';
 
 function twitterShare() {
   return `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
