@@ -1,12 +1,35 @@
 import React from 'react';
+import twitter from './assets/twitter.svg'
+import instagram from './assets/instagram.svg'
+import facebook from './assets/facebook.svg'
 import './App.css';
+
+const url = 'https://about.botor.no/'
+const text = 'A guide about the bot curious, by FOREIGN OBJECTS.';
+
+function twitterShare() {
+  return `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+}  
+
+function facebookShare() {
+  return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+}
 
 function App() {
   return (
     <div className="App">
       <aside>
         <div className="title">A guide for the bot curious</div>
-        <div className="credits"> A companion to <a href="https://botor.no/">BOT OR NOT</a>. <br/> Concept, design, development, writing by <a href="https://www.foreignobjects.net/" rel="noopener noreferrer" target="_blank" >FOREIGN OBJECTS</a>.</div>
+        <div className="credits"> Concept, design, development, writing by <a href="https://www.foreignobjects.net/" rel="noopener noreferrer" target="_blank" >FOREIGN OBJECTS</a> for <a href="https://botor.no/">BOT OR NOT</a>, a Mozilla Creative Awards project.</div>
+        
+        <div className='share'>
+          <a id="twitter" href={twitterShare()} rel="noopener noreferrer" target="_blank" > <img src={twitter} alt='twitter share' /> </a>
+
+          <a id="instagram" href="https://instagram.com/foreignobj" rel="noopener noreferrer" target="_blank" ><img src={instagram} alt='instagram share' /> </a>          
+          
+          <a id="facebook" href={facebookShare()} rel="noopener noreferrer" target="_blank" ><img src={facebook} alt='facebook share' /> </a>
+
+        </div>
       </aside>
       <main> 
         <div className="TLDR"> 
