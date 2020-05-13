@@ -19,7 +19,7 @@
 
 aside {
   margin: 5vh auto;
-  width: 30vw;
+  width: 35vw;
   display: flex-row;
   -webkit-box-align: space-between;
     -ms-flex-align: space-between;
@@ -27,7 +27,9 @@ aside {
 }
 
 .title {
-  font-size: 4vw;
+  font-size: 5vw;
+  text-transform: uppercase;
+  line-height: 1.3;
 }
 
 .credits {
@@ -53,6 +55,10 @@ h4 {
   font-weight: 500;
 }
 
+li {
+  margin: 1vh 0;
+}
+
 .TLDR {
   list-style: ' + ';
 }
@@ -71,4 +77,38 @@ a {
   color: inherit;
   text-decoration: none;
   font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  .App {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+        align-items: flex-start;
+    overflow: scroll;
+  }
+
+  aside {
+    width: 90vw;
+    margin: 5vh auto;
+    padding: 0;
+  }
+
+  aside > .title {
+    font-size: 3.5rem;
+  }
+  aside > .credits {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 0;
+    width: 90vw;
+    height: auto;
+    margin: 5vh auto;
+    font-size: 1.1rem;
+  }
 }
