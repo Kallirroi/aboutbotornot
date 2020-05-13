@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <aside>
-        <div className="title">A guide for the bot-curious</div>
+        <div className="title">A guide for the bot curious</div>
         <div className="credits"> A companion to <a href="https://botor.no/">BOT OR NOT</a>. <br/> Concept, design, development, writing by <a href="https://www.foreignobjects.net/" rel="noopener noreferrer" target="_blank" >FOREIGN OBJECTS</a>.</div>
       </aside>
       <main> 
