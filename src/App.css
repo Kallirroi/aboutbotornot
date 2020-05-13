@@ -1,38 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family:'Inter', sans-serif; 
+  color: #000;
+  font-weight: 400;
+  width: 100vw;
+  height: auto;
+  font-size: 1vw;
+  line-height: 1.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+aside {
+  margin: 5vh auto;
+  width: 30vw;
+  display: flex-row;
+  -webkit-box-align: space-between;
+    -ms-flex-align: space-between;
+        align-items: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-size: 4vw;
+}
+
+.credits {
+  font-size: 0.8vw;
+  margin-top: 5vh;
+}
+
+main {
+  margin: 5vh auto;
+  padding: 0 2vw;
+  width: 50vw;
+  height: 93vh;
+  overflow: scroll;
+}
+
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.TLDR {
+  list-style: ' + ';
+}
+
+.chapter {
+  display: block;
+  margin: 5vh 0;
+}
+
+.subtitle {
+  font-style: italic;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
 }
