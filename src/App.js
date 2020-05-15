@@ -35,7 +35,7 @@ function App() {
         <div className="TLDR"> 
           <h3>TL;DR</h3>
           <li>Be prepared for a <a href="#HR">rapid expansion of "boring" chatbots</a> in the coming years. Not nearly smart enough to replace your friends, but effective enough to replace some of their jobs.</li>
-          <li>New regulatory instruments will be <a href="Law">blunt and largely unenforceable</a> without a wholesale legal reassessment of digital platforms which allow automated disinformation to thrive.</li>
+          <li>New regulatory instruments will be <a href="#People">blunt and largely unenforceable</a> without a wholesale legal reassessment of digital platforms which allow automated disinformation to thrive.</li>
           <li><a href="#Duplex">Deception is a feature, not a bug</a> - even with legal disclosure, human-like bots are built by corporations to elicit users' emotional responses in order to make sales and gather data.</li>          
           <li>The internet will no longer be thought of primarily as a space built for people, but an ecosystem in which <a href="#People">humans and non-humans interact</a> in complex and often unpredictable ways.</li>
           <li>The <a href="#Surveillance">seamless normalisation</a> of chatbots in everyday life will intensify cloud-based surveillance by their providers at ever more granular levels.</li>
